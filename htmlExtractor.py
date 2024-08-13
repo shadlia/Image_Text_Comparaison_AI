@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import shutil
 from PIL import Image
 from io import BytesIO
+from modelExtraction import ArticleExtractor
 
 
 class ImageDownloader:
@@ -66,6 +67,17 @@ class ImageDownloader:
             file.write(text)
         print(f"Text saved to {file_name}")
 
+    def extract_html(self):
+        """Extract the HTML content from the current page."""
+        html_content = self.driver.page_source
+        return html_content
+
+    def save_html_to_file(self, html_content, file_name="html.txt"):
+        """Save the extracted HTML to a .txt file."""
+        with open(file_name, "w", encoding="utf-8") as file:
+            file.write(html_content)
+        print(f"HTML content saved to {file_name}")
+
     def image_download(
         self,
         url,
@@ -117,6 +129,10 @@ class ImageDownloader:
         # Save the extracted text to a file
         text = self.extract_text()
         self.save_text_to_file(text)
+
+        # Extract and save the HTML content to a file
+        html_content = self.extract_html()
+        self.save_html_to_file(html_content)
 
         # Close the browser
         self.driver.quit()

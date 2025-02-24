@@ -36,7 +36,7 @@ def main():
 
     # Set up API key and paths
     # ---------------------------------------------------------------------------------------------------#
-    """    api_key = "AIzaSyCfT12LpddN3ZNmYffPiTwEwp-WiKkILMo"
+    """    api_key = "YOUR API KEY"
     text_file_path = "article.txt"
     comparator = ImageTextComparator(api_key)
     comparator.generate_response(text_file_path, folder_name)

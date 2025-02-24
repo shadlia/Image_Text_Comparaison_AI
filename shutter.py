@@ -38,7 +38,7 @@ class ShutterstockImageFetcher:
 
 # Example usage
 if __name__ == "__main__":
-    api_key = "v2/VjFRZDhpQVdMWjhTc1JlcTJHZ3R6N3FwNUc4QUtBMFovNDM4MTE1NzgxL2N1c3RvbWVyLzQvMlhYYkQzdW1OMVRWdTFWUUFuVXlGeTJfdGJfUHQwU0VLLVFZQnNKaUdBSkp3QlFzZGxtX0doR0h6WjNadXFMTnhfTDJoMzhOdUtvS2c3TWtyaG9pd2FfdW5lOXQxWUtqbzhtTG0yVUFYTXhVMGVvbHQtVC13d1ZYdjBseG9DSEMwRTBZYjlDcTZPNWNhMFdQc1Z5Q18zbThXWDlMYnJ0eW5qWExQM05jU0x6M2IyZ2FwVU5iUVNDUTdMSU1ma3c5eTFsZFRGZ18wMkg1UE10cjV0N2prdy9hZWVEQ0NaRkE1U1RLbGxGek1tbml3"
+    api_key = "your-api-key"
     fetcher = ShutterstockImageFetcher(api_key)
 
     topic = "Donald trump"
